@@ -6,11 +6,11 @@ Designed with a sleek **dark glassmorphic UI**, this project is an excellent ful
 
 ---
 
-## 🎬 Project Demo
+## 📸 Project Interface
 
-Here is a full demonstration of the application in action:
+Here is a preview of the BrainQuiz home page and dashboard:
 
-![BrainQuiz Demo Flow](./demo.webp)
+![BrainQuiz Dashboard](./demo.png)
 
 ---
 
