@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainQuiz - Quiz Live</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="logo-container">
+      <div class="logo-icon">B</div>
+      <div class="logo-text">BrainQuiz</div>
+    </div>
+    <div>
+      <a href="index.html" class="btn-secondary" style="text-decoration: none;">Exit Quiz</a>
+    </div>
+  </header>
+
+  <main class="glass-panel" id="quiz-panel">
+    <!-- Active Quiz View -->
+    <div id="active-quiz-view">
+      <div class="quiz-header">
+        <h2 id="quiz-title">Loading Quiz Topic...</h2>
+        <span id="question-counter" style="color: var(--text-secondary); font-weight: 500;">Question 0/0</span>
+      </div>
+
+      <!-- Real-time Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="quiz-progress"></div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="question-card" id="question-card">
+        <p class="question-text" id="question-text">Retrieving question contents...</p>
+        
+        <!-- Options List -->
+        <div class="options-container" id="options-container">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+
+      <!-- Quiz Navigation Actions -->
+      <div style="display: flex; justify-content: flex-end; margin-top: 2rem;">
+        <button id="next-btn" class="quiz-btn" style="display: none;">Next Question</button>
+        <button id="submit-btn" class="quiz-btn" style="display: none;">Submit Quiz</button>
+      </div>
+    </div>
+
+    <!-- Quiz Results View (Initially Hidden) -->
+    <div id="results-view" class="results-panel" style="display: none;">
+      <h2 style="font-size: 2rem; font-weight: 800;">Quiz Completed!</h2>
+      <p style="color: var(--text-secondary); margin-top: 0.5rem;" id="results-username-tag">Great job, Player!</p>
+
+      <!-- Scoreboard Display -->
+      <div class="score-circle">
+        <span class="score-num" id="score-text">0</span>
+        <span class="score-total" id="total-text">out of 5</span>
+      </div>
+
+      <p id="performance-message" style="font-weight: 600; font-size: 1.1rem; margin-bottom: 2rem;">Keep studying!</p>
+
+      <!-- Correct Answers Detailed Breakdown -->
+      <div id="corrections-container" style="text-align: left; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+        <!-- Filled dynamically by app.js -->
+      </div>
+
+      <div class="results-actions">
+        <button onclick="location.reload()" class="quiz-btn">Retake Quiz</button>
+        <a href="index.html" class="btn-secondary" style="text-decoration: none; display: flex; align-items: center;">Back to Home</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
