@@ -10,7 +10,11 @@ Designed with a sleek **dark glassmorphic UI**, this project is an excellent ful
 
 Here is a preview of the BrainQuiz home page and dashboard:
 
-![BrainQuiz Dashboard](./demo.png)
+
+
+https://github.com/user-attachments/assets/4da13b0b-a1c8-41ff-949c-f39278dd8532
+
+
 
 ---
 
